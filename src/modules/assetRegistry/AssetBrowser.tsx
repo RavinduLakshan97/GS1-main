@@ -37,7 +37,7 @@ const AssetBrowser: React.FC = () => {
           sx={{ fontWeight: "bold", paddingBottom: "1rem" }}
           variant="h5"
         >
-          Asset - Browser
+          Product Catalogue
         </Typography>
         {selectedData?.length == 1 && (
           <CustomButton

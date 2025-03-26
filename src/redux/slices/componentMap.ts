@@ -116,11 +116,26 @@ const topNavComponents: Record<string, PageComponent> = {
   },
   assetRegistry: {
     id: "assetRegistry",
-    title: "Asset Registry",
+    title: "Product Catalogue",
     navType: "TopNav",
     icon: TbAsset,
     isPage: true,
-    component: AssetBrowser,
+    children: [
+      {
+        id: "applynow",
+        title: "View All",
+        navType: "TopNav",
+        isPage: true,
+        component: AssetBrowser,
+      },
+      {
+        id: "history&status",
+        title: "New Product",
+        navType: "TopNav",
+        isPage: true,
+        //component: HistoryStatus,
+      },
+    ],
   },
 };
 
